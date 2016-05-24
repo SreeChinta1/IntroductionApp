@@ -14,7 +14,7 @@ public class BitmapTester extends View
     public BitmapTester(Context context)
     {
         super(context);
-        image = BitmapFactory.decodeResource(getResources(), R.drawable.car);
+        image = BitmapFactory.decodeResource(getResources(), R.drawable.blue_car);
     }
 
     @Override
@@ -23,7 +23,7 @@ public class BitmapTester extends View
         super.onDraw(canvas);
         BitmapFactory.Options bitmapOptions = new BitmapFactory.Options();
         bitmapOptions.inSampleSize = 4;
-        Bitmap scaledImage = BitmapFactory.decodeResource(getResources(), R.drawable.car, bitmapOptions);
+        Bitmap scaledImage = BitmapFactory.decodeResource(getResources(), R.drawable.blue_car, bitmapOptions);
         canvas.drawBitmap(scaledImage, (canvas.getWidth()/2), 0, null);
     }
 }
