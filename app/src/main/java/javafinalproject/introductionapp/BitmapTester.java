@@ -9,7 +9,8 @@ import android.view.View;
 
 public class BitmapTester extends View
 {
-    private Bitmap image;
+    public static Bitmap image;
+    public static int x;
 
     public BitmapTester(Context context)
     {
@@ -24,6 +25,7 @@ public class BitmapTester extends View
         BitmapFactory.Options bitmapOptions = new BitmapFactory.Options();
         bitmapOptions.inSampleSize = 4;
         Bitmap scaledImage = BitmapFactory.decodeResource(getResources(), R.drawable.blue_car, bitmapOptions);
-        canvas.drawBitmap(scaledImage, (canvas.getWidth()/2), 0, null);
+        x = (canvas.getWidth()/2);
+        canvas.drawBitmap(scaledImage,x, 0, null);
     }
 }
