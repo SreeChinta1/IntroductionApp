@@ -20,7 +20,7 @@ public class SecondActivity extends AppCompatActivity implements GestureDetector
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        View screen  = new BitmapTester(this);
+        View screen  = new RoadTester(this);
         setContentView(screen);
         image = BitmapTester.image;
         gestureDetector = new GestureDetectorCompat(this, this);
