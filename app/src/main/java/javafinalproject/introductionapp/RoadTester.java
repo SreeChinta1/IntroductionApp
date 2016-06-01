@@ -21,7 +21,7 @@ public class RoadTester extends View
     @Override
     protected void onDraw(Canvas canvas)
     {
-        super.onDraw(canvas);
+        super.onDraw(canvas); 
         canvas.drawColor(Color.BLACK);
         Paint white = new Paint();
         Rect divider = new Rect();
